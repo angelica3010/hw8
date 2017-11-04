@@ -1,7 +1,87 @@
-#test {
-  color:blue;
+
+
+html {
+  font-family: arial; cursive; fantasy;
 }
 
-body {
-  margin: 100px
+#aboutpage {
+  margin: 100px;
 }
+
+h1 {
+  color: blue;
+  position: relative;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+p.class1 {
+  color:red;
+}
+
+p.class2 {
+  font-weight: bold;
+}
+
+#continents {
+  font-size:16pt;
+  position: static;
+}
+
+#like_btn {
+  background-color: powderblue;
+}
+
+#home {
+  margin: 90px;
+}
+
+h3 {
+  color: green;
+}
+
+h4 {
+  font-style: italic;
+}
+
+#cambodia {
+  border: thin gray solid;
+  position: relative;
+}
+
+#photo_btn {
+  positon: absolute;
+}
+
+#go {
+  background-color: pink;
+}
+
+p.class3 {
+  color: purple;
+}
+
+h5 {
+  color: purple;
+  position: fixed;
+}
+
+#first {
+  background-color: yellow;
+}
+
+#second {
+  background-color: red;
+
+}
+
+/*div.float {
+  margin: 30px;
+  position: relative;
+}*/
