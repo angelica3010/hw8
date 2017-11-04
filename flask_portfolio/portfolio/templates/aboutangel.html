@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    html{
+      font-family: "Comic Sans MS"}
+    body {
+      margin: 100px}
+      h1   {color: blue;
+      position: relative}
+      table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+p.class1 {
+  color:red
+
+}
+
+p.class2{
+  font-weight: bold;
+}
+
+#continents {
+  font-size:16pt;
+  position: static
+}
+
+#like_btn {
+  background-color: powderblue;
+}
+
+  </style>
+
+
+
     <title>Angel Trinh </title>
 </head>
 <body>
   <h1> Welcome! This is Angel Trinh's About Me Page  </h1>
   <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/18301439_10155129279281215_1081203471137198896_n.jpg?oh=56d6b43fae64b59cce11f2ee2ff2053b&oe=5A6443D7">
-
-  <p> Find some of Angel's Github Projects below
+<link ... href="{{ url_for('static', filename='stylesheets/style.css') }}" />
+  <p class ="class1"> Find some of Angel's Github Projects below
  </p>
       <a href="https://github.com/angelica3010">Angel Trinh Github</a>
       <a href="https://github.com/angelica3010/crystals">Angel Trinh Crystals</a>
     <a href="https://github.com/angelica3010/hangman">Angel Trinh Hangman</a>
     <a href="https://github.com/angelica3010/nytreactsearch">Angel Trinh NY React Search</a>
 
-   <p>
+   <p class ="class2">
      <form id="like_btn" action="/about" method="POST">
        <button type="submit" name="index_like">Like Button</button>
-       <p>
+       <p class="class1 class2">
         Here is the amount of likes so far:  {{new_count}}
        </p>
      </form>
    </p>
 <div>
-   <table>
+   <table id="continents">
    <tbody>
    <th>
     Continents Visited

@@ -2,23 +2,67 @@
 <html>
 <head>
     <title>Angel Trinh</title>
+<style>
+  html {
+    font-family: cursive;
+  }
+  body {
+    margin: 90px
+  }
+  h1{
+    color: green;
+  }
+  h2 {
+    font-style: italic;
+  }
+#cambodia {
+  border: thin gray solid;
+  position: relative
+}
+
+#photo_btn{
+  positon: absolute;
+}
+
+#go {
+  background-color: pink
+}
+
+p.class3{
+  color: purple;
+
+
+}
+
+</style>
+
+
 </head>
 <body>
 
     <h1>Hello! My name is Angel Trinh.</h1>
     <h2>In my free time I like to go to the gym, cook, and travel. </h2>
-    <p>The picture below is in Cambodia. I have been to 31 countries to date.</p>
+    <p id="cambodia">The picture below is in Cambodia. I have been to 31 countries to date.</p>
     <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/11037891_10153095816296215_5877835362652294318_n.jpg?oh=ee33e4be160c734c4b0a59849f350b31&oe=5A709556">
-    <a href="/about">Angel Trinh About Me</a>
-      <a href="https://github.com/angelica3010">Angel Trinh Github </a>
+
+    <p class ="class3">
+      Here is a Link
+      <a href="/about">Angel Trinh About Me</a>
+        <a href="https://github.com/angelica3010">Angel Trinh Github </a>
+
+    </p>
+
+    <p id="go">
+      I wish I could go to more countries.
+    </p>
 
 <div>
 
     <p>
       <form id="photo_btn" action="/photos" method="POST">
         <button type="submit" name="photos_page">Go to my Photos</button>
-        <p>
-         Here is the amount of likes so far:  {{new_count}}
+        <p class ="class3">
+         Traveling is so much fun.
         </p>
       </form>
     </p>
