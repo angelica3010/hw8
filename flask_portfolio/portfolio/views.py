@@ -8,14 +8,13 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/about', methods = ['POST', 'GET'])
-#def home():
-#    return render_template('aboutangel.html')
+@app.route('/about', methods = ['POST','GET'])
 
 def about():
     if request.method == 'POST':
         global like_count
         like_count += 1
         print(f'count is now {like_count}.')
-        count = like_count
+        
+    count = like_count
     return render_template('aboutangel.html', new_count = count)
