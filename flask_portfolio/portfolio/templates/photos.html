@@ -57,6 +57,35 @@ div.float{
     <a href="/about">Angel Trinh About Me</a>
       <a href="https://github.com/angelica3010">Angel Trinh Github </a>
 
+      <p>
+        <form id="homebtn" action="/about" method="POST">
+          <button type="submit" name="photos_page">Go to my AboutMe</button>
+          <p class ="class3">
+           Traveling is so much fun.
+          </p>
+        </form>
+      </p>
+
+      <table>
+          {% for i in messages%}
+        <tr>
+      		<td>
+
+            {{i.name}} said: {{i.message}}
+          </td>
+      	</tr>
+  {% endfor %}
+      </table>
+
+
+
+      <h3> Post a message for world to see: </h3>
+
+      <form method="POST" action="/photos">
+      	<input type="text" name="name" placeholder="Your Name"> <br> <br>
+      	<textarea name='message' placeholder="Your message "></textarea> <br> <br>
+      	<button>Post</button>
+      </form>
 
 </body>
 </html>
