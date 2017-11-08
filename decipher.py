@@ -21,7 +21,6 @@ print(n)
 print(m)
 print(alphabet)
 
-#trying to make sure that the user input is not a muliple of 26
 
 
 
@@ -29,13 +28,14 @@ print(alphabet)
 
 #set up a for loop to loop through every letter in message m to get the index
 for i in m:
+    #if there is a space, you will still append
     if i == " ":
         newmessage.append(i)
 
     elif i in alphabet:
         currentposition = alphabet.index(i)
         #print(currentposition)
-        newposition = currentposition + n
+        newposition = currentposition - n
         #print(f"This is the new position {newposition}")
 #use find method to get current positon of letter
         moduleposition = newposition % 26
@@ -45,7 +45,8 @@ for i in m:
 #print(f"This is the new alphabet list {newmessage}")
     else:
         continue
-encryptednote = "".join(newmessage)
-print(encryptednote)
+#make the list into a string, each element in the list is now joined
+decryptednote = "".join(newmessage)
+print(decryptednote)
 
 #make the decryption
