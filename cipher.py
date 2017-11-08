@@ -1,14 +1,13 @@
 import string
 #get user input
-n = int(input("send me a number that is not a multiple of 26: "))
 
 #make sure that is not divisible by 26, othwerwise it will not encrypt
-while n % 26 ==0:
-    print("I will not accept your input if it is a multiple of 26")
+while True:
     n = int(input("send me a number that is not a multiple of 26: "))
-
     if n % 26 != 0:
         break
+    else:
+        print("I will not accept your input if it is a multiple of 26")
 
 m = input("write me a message : ")
 
